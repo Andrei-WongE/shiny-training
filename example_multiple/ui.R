@@ -10,10 +10,10 @@
 
 # Define UI for application that draws a histogram
 navbarPage("Unfaithful Data - Customized", 
-           theme = bs_theme(bootswatch = "minty"),
+           theme = bs_theme(bootswatch = "darkly"),
            tabPanel("Introduction", 
                         h3("Exploring the Faithful Geyser Data"),
-                        p("This application allows you to visualize the waiting times between eruptions of the Old Faithful geyser. 
+                        p("This application allows you to visualize the waiting times between emotional eruptions of the Old UnFaithful geyser. 
                           You can choose between a histogram and a density plot, adjust the number of bins, and select a color for the plot.")
                   
                     ), 
@@ -42,8 +42,10 @@ navbarPage("Unfaithful Data - Customized",
 ),
 tabPanel("Table",
              h2("Unfaithful Data Table"),
-             p("Below is the table of the Old Faithful geyser data. You can view the waiting times between eruptions."),
-             tableOutput("data_table")
+             p("Below is the table of the Old UnFaithful geyser data. You can view the waiting times between emotional eruptions."),
+             tableOutput("data_table"),
+             downloadButton("download_data", "Download Data")
+         
          )
 )
 
