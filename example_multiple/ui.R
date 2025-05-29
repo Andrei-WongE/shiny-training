@@ -9,7 +9,7 @@
 
 
 # Define UI for application that draws a histogram
-navbarPage("Faithful Geyser Data - Customized", 
+navbarPage("Unfaithful Data - Customized", 
            theme = bs_theme(bootswatch = "minty"),
            tabPanel("Introduction", 
                         h3("Exploring the Faithful Geyser Data"),
@@ -41,7 +41,7 @@ navbarPage("Faithful Geyser Data - Customized",
     )
 ),
 tabPanel("Table",
-             h2("Faithful Geyser Data Table"),
+             h2("Unfaithful Data Table"),
              p("Below is the table of the Old Faithful geyser data. You can view the waiting times between eruptions."),
              tableOutput("data_table")
          )
